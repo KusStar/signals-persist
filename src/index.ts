@@ -1,13 +1,13 @@
 import { Signal } from '@preact/signals-core';
 
 
-interface Storage {
+export interface Storage {
   getItem(key: string): Promise<string | null> | string | null
   setItem(key: string, value: string): Promise<void> | void
   removeItem(key: string): Promise<void> | void
 }
 
-interface Options {
+export interface Options {
   /**
    * storage to use, defaults to window.localStorage
    */
