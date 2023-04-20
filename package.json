@@ -1,0 +1,27 @@
+{
+  "name": "signals-persist",
+  "version": "0.0.1",
+  "keywords": [],
+  "homepage": "https://github.com/KusStar/signals-persist#readme",
+  "repository": "KusStar/signals-persist",
+  "license": "MIT",
+  "author": "KusStar (https://github.com/KusStar)",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs",
+    "prepublishOnly": "npm run build",
+    "pub": "release-it"
+  },
+  "devDependencies": {
+    "@preact/signals-core": "^1.3.0",
+    "@types/node": "18.15.11",
+    "release-it": "15.10.1",
+    "tsup": "6.7.0",
+    "typescript": "5.0.4"
+  },
+  "peerDependencies": {
+    "@preact/signals-core": "^1.3.0"
+  }
+}
